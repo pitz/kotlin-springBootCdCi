@@ -4,6 +4,4 @@ jdk:
 dist: trusty
 deploy:
   provider: heroku
-  api_key:
-    secure: 3847b86b-4de1-402f-aeb9-c71dcb6edb33
   app: springboot-cd
