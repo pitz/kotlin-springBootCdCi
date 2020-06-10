@@ -14,7 +14,7 @@ import java.lang.Exception
 
 @Transactional
 @Service
-class MultiplicationService(val userService: UserService,
+class MultiplicationService(val userService: UserService, 
                             val multiplicationRepository: MultiplicationRepository,
                             val multiplicationResultAttemptRepository: MultiplicationResultAttemptRepository) {
 
@@ -24,7 +24,7 @@ class MultiplicationService(val userService: UserService,
     }
 
     public fun getRandomNumber(): Int {
-        return (11..99).shuffled().first()
+        return (11..99).shuffled().first() 
     }
 
     public fun checkAttempt(attemptDto: SaveAttemptDTO) : MultiplicationResultAttempt {
